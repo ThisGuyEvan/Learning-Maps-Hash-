@@ -2,10 +2,11 @@ import java.util.*;
 
 class Main {
   public static void main(String[] args) {
-    Scanner console = new Scanner(System.in);    
-
-    System.out.println(palindromeRearrange("")); //1h, 1e, 2l, 1o
-    console.close();
+    //Tests:
+    System.out.println(palindromeRearrange("z"));
+    System.out.println(palindromeRearrange("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc"));
+    System.out.println(palindromeRearrange("zyyzzzzz"));
+    System.out.println(palindromeRearrange("zaa"));
   }
 
   public static boolean palindromeRearrange(String s){
@@ -13,7 +14,6 @@ class Main {
     int oddLetterCount = 0;
 
     for (int i : countOfLetters){
-      System.out.println(i);
       if (i % 2 != 0){
         oddLetterCount++;
       }
