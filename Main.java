@@ -7,6 +7,8 @@ class Main {
     System.out.println(palindromeRearrange("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc"));
     System.out.println(palindromeRearrange("zyyzzzzz"));
     System.out.println(palindromeRearrange("zaa"));
+    System.out.println(palindromeRearrange("oogaBooga"));
+
   }
 
   public static boolean palindromeRearrange(String s){
@@ -17,10 +19,10 @@ class Main {
       if (i % 2 != 0){
         oddLetterCount++;
       }
-    }
 
-    if (oddLetterCount >= 2){
-      return false;
+      if (oddLetterCount >= 2){
+        return false;
+      }
     }
 
     return true;
